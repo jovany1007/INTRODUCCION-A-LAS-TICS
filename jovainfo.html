@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jovany Pérez</title>
+
+  <style>
+    /* fondo oscuro con rojo */
+    body {
+      background: radial-gradient(circle at center, #1a0000 0%, #000 100%);
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* contenedor principal */
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      background: rgba(255, 0, 0, 0.08);
+      border: 1px solid rgba(255, 0, 0, 0.2);
+      padding: 2rem 3rem;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.2);
+      transition: 0.3s;
+    }
+
+    /* hace mi foto redonda */
+    .foto {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #ff0000;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+      flex-shrink: 0;
+    }
+
+    .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* texto con mi info */
+    .info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .info p {
+      color: #ccc;
+      margin: 8px 0 20px 0;
+    }
+
+    /* botones rojos como antes */
+    .links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      padding: 10px 20px;
+      transition: 0.2s;
+      border: none;
+      color: #fff;
+    }
+
+    .links a.instagram {
+      background-color: #ff0000;
+    }
+
+    .links a.github {
+      background-color: #222;
+      border: 1px solid #ff0000;
+    }
+
+    .links a.instagram:hover {
+      background-color: #cc0000;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    }
+
+    .links a.github:hover {
+      background-color: #000;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- logo -->
+    <div class="foto">
+      <img src="logo.png">
+    </div>
+
+    <div class="info">
+      <!-- mi nombre -->
+      <h1>Jovany Pérez</h1>
+      <!-- mi descripción -->
+      <p>Me apasiona la programacion y las redes</p>
+
+      <!-- mis links -->  
+      <div class="links">
+        <a href="https://instagram.com/pxrezz_j" target="_blank" class="instagram">Instagram</a>
+        <a href="https://github.com/jovany1007" target="_blank" class="github">GitHub</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
